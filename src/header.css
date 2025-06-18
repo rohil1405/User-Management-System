@@ -1,0 +1,27 @@
+.header-wrap {
+  height: 68px;
+  background-color: #fff;
+  padding: 15px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.header-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #000;
+}
+.header-right img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
