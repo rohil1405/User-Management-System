@@ -33,7 +33,7 @@ const Login = () => {
   const onSubmit = async (values: { email: string; password: string }) => {
     try {
       const response = await sendRequest({
-        url: `https://auth-service-wts6.onrender.com/api/user/login`,
+        url: `https://chatapp-backend-bdp6.onrender.com/api/user/login`,
         configuration: {
           method: "POST",
           body: JSON.stringify({
@@ -90,25 +90,6 @@ const Login = () => {
       }
     }
   };
-
-  // const responseGoogle = async (authResult) => {
-  //   try {
-  //     console.log(authResult);
-  //     if (authResult["code"]) {
-  //       const result = await googleAuth(authResult["code"]);
-  //       const { email, name, image } = result.data.user;
-  //       console.log(result.data.user);
-  //     }
-  //   } catch (error) {
-  //     console.error("Error while requesting google code: ", error);
-  //   }
-  // };
-
-  // const googleLogin = useGoogleLogin({
-  //   onError: responseGoogle,
-  //   onSuccess: responseGoogle,
-  //   flow: "auth-code",
-  // });
 
   return (
     <section className="auth-wrap">
