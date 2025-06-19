@@ -33,7 +33,7 @@ const Login = () => {
   const onSubmit = async (values: { email: string; password: string }) => {
     try {
       const response = await sendRequest({
-        url: `https://auth-service-wts6.onrender.com/api/user/login`,
+        url: `https://30ba-106-201-232-226.ngrok-free.app/api/v1/login`,
         configuration: {
           method: "POST",
           body: JSON.stringify({
